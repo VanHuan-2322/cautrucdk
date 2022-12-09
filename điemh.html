@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <h1> Tính điểm đại học khối D</h1>
+    Môn toán <input type="text" placeholder="Nhập điểm" id="a"><br><br>
+    Môn anh <input type="text"placeholder="Nhập điểm" id="b"><br><br>
+    Môn văn <input type="text"placeholder="Nhập điểm" id="c" ><br><br>
+    Khu vực <select name="kv" id="1">
+        <option value="kv1">Kv1</option>
+        <option value="kv2-nt">Kv2-nt</option>
+        <option value="kv2">Kv2</option>
+        <option value="kv3">Kv3</option> 
+    </select> 
+    &emsp14; <button onclick="tt()"> Tổng </button>         
+    <p id="t"></p>
+    <script> 
+        function tt(){
+        var a;
+        var b;
+        var c; 
+        var tong;
+        var a = Number(document.getElementById('a'). value);
+        var b = Number(document.getElementById('b'). value);
+        var c = Number(document.getElementById('c'). value);
+         
+          var k=document.getElementById('1').value ;
+
+        switch (k)
+        {
+            case 'kv1':
+            k=0.75;
+            break;
+            case 'kv2-nt':
+            k=0.5;
+            break;
+            case 'kv2':
+            k=0.25;
+            break;
+            case 'kv3':
+            k=0;
+            break;
+        } 
+   var tong=a+b+c+k;
+   document.getElementById('t').innerHTML="Điểm Đại học của bạn là "+ tong
+     } 
+    </script> 
+
+</body>
+</html>

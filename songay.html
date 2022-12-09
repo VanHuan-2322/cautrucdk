@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="n"/>
+    <button onclick="tinhsongay()">Tinh so ngay</button>
+    <p id="sn"></p>
+    <script>
+        function tinhsongay() {
+        var thang = (document.getElementById('n'). value);
+        var ngay;
+        switch (thang)
+        { case '1':
+          ngay = '31';
+          break;
+         case '2':
+          ngay = '28 hoac 29' ;
+          break;
+          case '3':
+          ngay = '31';
+          break;
+          case '4':
+          ngay = '30';
+          break;
+          case '5':
+          ngay = '31';
+          break;
+          case '6':
+          ngay = '30';
+          break;
+          case '7':
+          ngay = '31';
+          break;
+          case '8':
+          ngay = '31';
+          break;
+          case '9':
+          ngay = '30';
+          break;
+          case '10':
+          ngay = '31';
+          break;
+          case '11':
+          ngay = '30';
+          break;
+          case '12':
+          ngay = '31';
+          break;
+        } 
+         document.getElementById('sn').innerHTML='thang '+ thang + ' co '+ ngay + ' ngay';
+    }      
+    </script>
+</body>
+</html>

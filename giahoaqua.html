@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="h"></p>
+  <select name="hoa qua" id="hq"value='Loai qua'>
+    <option>Chon loai qua</option>
+    <option>Mang cut</option>;
+    <option>Oi</option>;
+    <option>Dua hau</option>;
+    <option>Tao</option>;
+    <option>Xoai</option>;
+    <option>Cam</option>;
+    <option>Chom chom</option>;
+</select>
+    &emsp14;&#160 <button onclick="xemgia()"> Xem gia </button>
+    <script>
+        function xemgia(){
+            var gia = (document.getElementById('hq'). value);
+             var tien;
+             switch (gia)
+            {   case 'Mang cut' :
+                 tien="60000" ; 
+                break;
+                case 'Oi':
+                tien= '20000';
+                break;  
+                case 'Dua hau':
+                tien='30000';
+                break;  
+                case 'Tao':
+                tien="40000";
+                break;  
+                case 'Xoai':
+                tien='10000';
+                break;  
+                case 'Cam':
+                tien='15000';
+                break;  
+                case 'Chom chom':
+                tien='50000';
+                break;  
+            } document.getElementById('h').innerHTML= tien +' dong';       
+        }
+    </script>
+</body>
+</html>

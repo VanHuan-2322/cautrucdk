@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        a=Number(prompt('nhap chieu cao'));
+        b=Number(prompt('nhap can nang'));
+        bmi=b/(a*a);
+        if (bmi>40) {alert('beo phi c3')}
+        else if(bmi>=35 && bmi<40) {alert('beo phi c2')}
+        else if(bmi<35 && bmi>= 30) {alert('beo phi c1')}
+        else if(bmi<25 && bmi>= 18.5) {alert('binh thuong')}
+        else if(bmi<18.5 && bmi>= 17) {alert('gay c1')}
+        else if(bmi<17 && bmi>= 16) {alert('gay c2')}
+        else{alert('gay c3')}    
+    </script>
+</body>
+</html>
